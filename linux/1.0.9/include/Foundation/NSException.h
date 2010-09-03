@@ -201,14 +201,6 @@ LF_EXPORT void _NSRemoveHandler(NSHandler *handler);
 /*  Use BREAK inside a TRY block to get out of it */
 #define BREAK	({_NSRemoveHandler(&exceptionHandler); goto _quit;})
 
-#ifndef PRECOMP
-/*  If you want to generate an exception issue a THROW with the exception
-    an object derived from the NSException class. */
-# define THROW(exception...)	[##exception raise]
-#else
-# define THROW(exception)	[exception raise]
-#endif /* PRECOMP */
-
 /*  If you want to reraise an exception inside an exception handler
     just say RERAISE. */
 #define RERAISE                 [localException raise]

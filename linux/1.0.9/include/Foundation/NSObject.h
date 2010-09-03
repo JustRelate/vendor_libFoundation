@@ -43,7 +43,7 @@
 
 #define LIB_FOUNDATION_MAJOR_VERSION    1
 #define LIB_FOUNDATION_MINOR_VERSION    0
-#define LIB_FOUNDATION_SUBMINOR_VERSION 8
+#define LIB_FOUNDATION_SUBMINOR_VERSION 9
 
 #ifndef NSTimeInterval__defined
 #define NSTimeInterval__defined
